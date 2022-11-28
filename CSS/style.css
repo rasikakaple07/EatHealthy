@@ -1,0 +1,147 @@
+/* CSS reset */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+    
+}
+
+
+/* Navigation bar: Logo and image */
+/* Navigation bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    border: 2px;
+    margin: 5px 10px;
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    /* margin: 30px; */
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../images/olive-oil-g77e66eb6e_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1{
+    
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* services section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: rgb(248, 226, 216);
+}
+#services .box img{
+    height: 170px;
+    margin: auto;
+    display: block;   
+    box-shadow: 3px 3px 5px brown; 
+}
+#services .box p{
+    padding: 5px;
+    font-size: 1.2rem;
+}
+#services{}
+
+
+
+
+
+/* Utility Classes */
+.h_primary{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}.h_secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+
+.btn{
+    color: white;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    border-radius: 20px;
+    margin: 17px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.center{
+    text-align: center;
+}
+
+
